@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="Discover FORM, a ladies fitness studio concept in Behala, Kolkata. Explore strength training, functional fitness, boxing, cardio and supportive coaching.">
+  <title>FORM — Ladies Fitness Studio · Behala, Kolkata</title>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/form-gothic-semibold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/images/hero-battle-ropes.webp" as="image">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/form.css">
+  <link rel="stylesheet" href="assets/css/experience.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <script src="assets/js/config.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+  <script src="assets/js/motion.js" defer></script>
+  <script src="assets/js/experience.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="10" r="2" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="icon-star" viewBox="0 0 100 100"><path d="m50 0 9 29 26-14-14 26 29 9-29 9 14 26-26-14-9 29-9-29-26 14 14-26L0 50l29-9-14-26 26 14Z" fill="currentColor"/></symbol>
+  </svg>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#home" aria-label="FORM Ladies Fitness Studio, home"><span class="brand-word">FORM<span class="brand-dot">.</span></span><span class="brand-tag">LADIES FITNESS STUDIO</span></a>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a href="#about">The studio</a><a href="#training">Training</a><a href="#journey">Your first day</a><a href="#membership">Membership</a><a href="#contact" class="nav-mobile-cta">Start your journey ↗</a>
+      </nav>
+      <a class="button button-small button-outline header-cta" href="#contact">Come meet us <svg class="icon"><use href="#icon-arrow"/></svg></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation"><span></span><span></span></button>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress"></span></div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" data-hero-story="strength" aria-labelledby="hero-title">
+      <div class="hero-media"><img id="hero-story-image" src="assets/images/hero-battle-ropes.webp" width="1672" height="941" alt="An Indian woman training with battle ropes in a black and yellow gym" fetchpriority="high"></div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-lane" aria-hidden="true"><i></i><i></i><i></i><span>THE FORM TRAINING FLOOR</span></div>
+      <div class="hero-corner" aria-hidden="true">F<span>01 / BEHALA</span></div>
+      <div class="hero-content container">
+        <div class="eyebrow hero-eyebrow"><span class="live-dot"></span> BEHALA, KOLKATA <span class="eyebrow-separator">/</span> A SPACE FOR WOMEN</div>
+        <h1 id="hero-title"><span class="hero-line">Strong.</span><span class="hero-line hero-line-accent">Your way.</span></h1>
+        <svg class="hero-signature" viewBox="0 0 500 42" aria-hidden="true"><path d="M6 28C120 2 330 6 491 18M94 33c122-9 229-8 326-4" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>
+        <p class="hero-copy" id="hero-story-copy">Purposeful training, clear coaching and a women-only space to build a routine that feels like yours.</p>
+        <div class="hero-actions"><a class="button button-yellow" href="#finder">Find my training <svg class="icon"><use href="#icon-arrow"/></svg></a><a class="text-link hero-secondary" href="#training">Explore the training <span>↓</span></a></div>
+        <div class="hero-story-tabs" role="group" aria-label="Choose a training story">
+          <button type="button" data-hero-choice="strength" aria-pressed="true"><span>01</span> Strength</button>
+          <button type="button" data-hero-choice="movement" aria-pressed="false"><span>02</span> Movement</button>
+          <button type="button" data-hero-choice="together" aria-pressed="false"><span>03</span> Together</button>
+        </div>
+        <p class="sr-only" id="hero-story-status" aria-live="polite"></p>
+        <div class="hero-caption"><span class="caption-rule"></span> <span id="hero-story-caption">STRENGTH IS PERSONAL. SO IS OUR APPROACH.</span></div>
+      </div>
+      <div class="hero-side-label" aria-hidden="true">MOVE WITH PURPOSE · FORM / BEHALA</div>
+      <a href="#about" class="hero-scroll" aria-label="Scroll to discover FORM"><span>SCROLL TO DISCOVER</span><span class="scroll-arrow">↓</span></a>
+      <div class="hero-bottom"><div class="container hero-bottom-inner"><span><b>Women-only space</b>Room to focus on you.</span><span><b>Beginner-friendly</b>Start where you are.</span><span><b>Coaching that listens</b>A plan with your pace in mind.</span></div></div>
+    </section>
+
+    <div class="ticker" aria-label="FORM training philosophy"><div class="container ticker-track"><span>01 / Strength with purpose</span><span>02 / A rhythm that’s yours</span><span>03 / Coaching that listens</span><span>04 / Room to reset</span></div></div>
+
+    <section class="about section-pad" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-photo will-reveal">
+          <img src="assets/images/intro-cycling.webp" width="1122" height="1402" alt="A woman enjoying a comfortable cycling warm-up" loading="lazy">
+          <span class="photo-index">01 / A FRESH START</span>
+          <div class="photo-note"><span class="seal-small">FORM / BEHALA</span><strong>You belong<br>on this floor.</strong><span class="seal-small">A SPACE FOR WOMEN</span></div>
+        </div>
+        <div class="about-copy will-reveal">
+          <p class="eyebrow"><span class="section-number">01</span> THE FORM FEELING</p>
+          <h2 id="about-title">A space to feel<br><span class="text-outline">like yourself.</span></h2>
+          <p class="lead">You don’t need to feel fit before you walk in. You just need a place to begin.</p>
+          <p>FORM is a ladies fitness studio concept for Behala: purposeful training, approachable coaching and enough choice to find something you enjoy. Lift, move, box, cycle or take a quieter session on the mat.</p>
+          <p>Whether you’re returning after a break or finding your first routine, the starting point is a conversation about you—your comfort, your schedule and what you want to work towards.</p>
+          <div class="about-principles"><span><svg class="icon"><use href="#icon-check"/></svg> Build confidence before intensity</span><span><svg class="icon"><use href="#icon-check"/></svg> Learn the movement, then add the challenge</span><span><svg class="icon"><use href="#icon-check"/></svg> Keep your routine practical</span></div>
+          <a class="text-link dark-link" href="#journey">See how your first day works <svg class="icon"><use href="#icon-arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="finder section-pad" id="finder" aria-labelledby="finder-title">
+      <div class="container">
+        <div class="finder-heading"><div><p class="eyebrow">A STARTING POINT, SHAPED AROUND YOU</p><h2 id="finder-title">Find your<br><span class="text-outline">kind of training.</span></h2></div><p>Three simple questions. A programme to explore. Your preferences go straight into your enquiry when you’re ready.</p></div>
+        <div class="finder-shell">
+          <div class="finder-route"><span class="finder-route-label">YOUR TRAINING ROUTE</span><ol><li data-finder-stop="0" class="is-current"><span>01</span><div>Goal<strong id="finder-goal-preview">Choose your goal</strong></div></li><li data-finder-stop="1"><span>02</span><div>Experience<strong id="finder-experience-preview">Your starting point</strong></div></li><li data-finder-stop="2"><span>03</span><div>Your time<strong id="finder-time-preview">Your daily rhythm</strong></div></li></ol><p>Your coach can help confirm the right starting point for you.</p><a href="#contact" class="finder-skip">Go straight to an enquiry ↗</a></div>
+          <div class="finder-workspace">
+            <div id="finder-question-panel"><p class="finder-question-count" id="finder-question-count">01 / 03</p><h3 id="finder-question" tabindex="-1">What would you like from training?</h3><p class="finder-question-note" id="finder-question-note">Choose the direction that feels closest to you.</p><div class="finder-options" id="finder-options" role="group" aria-labelledby="finder-question"><button type="button" class="finder-option" data-finder-value="strength" aria-pressed="false"><strong>Build strength</strong><span>Get comfortable with weights and technique.</span></button><button type="button" class="finder-option" data-finder-value="movement" aria-pressed="false"><strong>Move more</strong><span>Find purposeful full-body movement.</span></button><button type="button" class="finder-option" data-finder-value="rhythm" aria-pressed="false"><strong>Enjoy group energy</strong><span>Movement, music and shared effort.</span></button><button type="button" class="finder-option" data-finder-value="unsure" aria-pressed="false"><strong>Find my starting point</strong><span>I’d like a little guidance first.</span></button></div><div class="finder-actions"><button type="button" class="finder-back" id="finder-back" disabled>← Back</button><button type="button" class="button button-black" id="finder-next" disabled><span id="finder-next-label">Next: your experience</span><svg class="icon"><use href="#icon-arrow"/></svg></button></div></div>
+            <div class="finder-result" id="finder-result" hidden><div class="finder-result-photo"><img id="finder-result-image" src="assets/images/03-technique-coaching.webp" width="1122" height="1402" alt="A female coach helping a trainee understand movement" loading="lazy"><span>A PROGRAMME TO EXPLORE</span></div><div class="finder-result-copy"><p class="eyebrow">YOUR STARTING POINT</p><h3 id="finder-result-title" tabindex="-1">A coached first session.</h3><p id="finder-result-description"></p><div class="finder-result-tags"><span id="finder-result-experience"></span><span id="finder-result-time"></span></div><button type="button" class="button button-yellow" id="finder-apply">Add this to my enquiry <svg class="icon"><use href="#icon-arrow"/></svg></button><button type="button" class="finder-edit" id="finder-edit">Edit your answers ↗</button></div></div>
+            <p id="finder-status" class="sr-only" aria-live="polite"></p>
+          </div>
+        </div>
+        <noscript><p class="finder-noscript">Explore the programmes below, then add your interests and preferred time to the enquiry form.</p></noscript>
+      </div>
+    </section>
+
+    <section class="training section-pad dark-section" id="training" aria-labelledby="training-title">
+      <div class="container">
+        <div class="section-heading will-reveal"><div><p class="eyebrow"><span class="section-number">02</span> FIND YOUR WAY TO MOVE</p><h2 id="training-title">Find your<br><span class="text-yellow">kind of strong.</span></h2></div><p>Some days you want to lift. Some days you want to move to a beat. There’s room for both.</p></div>
+        <div class="filter-bar" role="group" aria-label="Filter training programmes"><button type="button" class="filter active" data-filter="all" aria-pressed="true">All training <span>05</span></button><button type="button" class="filter" data-filter="strength" aria-pressed="false">Strength</button><button type="button" class="filter" data-filter="conditioning" aria-pressed="false">Conditioning</button><button type="button" class="filter" data-filter="cardio" aria-pressed="false">Cardio & rhythm</button></div>
+        <p id="filter-status" class="sr-only" aria-live="polite">Showing all 5 programmes.</p>
+        <div class="programme-controls"><p>Five ways to find your rhythm.</p><div><span id="programme-position" aria-live="polite">01 / 05</span><button class="panel-prev" type="button" aria-label="Previous training panel">←</button><button class="panel-next" type="button" aria-label="Next training panel">→</button></div></div>
+        <div class="programme-grid">
+          <article class="programme-card is-spotlight" data-category="strength">
+            <img src="assets/images/04-strength.webp" width="1122" height="1402" alt="A woman practising a dumbbell chest press on an incline bench" loading="lazy">
+            <div class="programme-top"><span>01 / STRENGTH</span><span class="programme-pill">BUILD</span></div>
+            <div class="programme-info"><h3>Strength.</h3><p>Weights, good technique and steady progression.</p><button type="button" class="programme-open" data-programme="strength" aria-label="Explore strength training"><svg class="icon"><use href="#icon-arrow"/></svg></button></div>
+          </article>
+          <article class="programme-card" data-category="conditioning">
+            <img src="assets/images/06-sled-push.webp" width="1672" height="941" alt="A woman pushing a weighted sled along a training lane" loading="lazy">
+            <div class="programme-top"><span>02 / FUNCTIONAL</span><span class="programme-pill">MOVE</span></div>
+            <div class="programme-info"><h3>Functional.</h3><p>Sleds, circuits and purposeful full-body movement.</p><button type="button" class="programme-open" data-programme="functional" aria-label="Explore functional fitness"><svg class="icon"><use href="#icon-arrow"/></svg></button></div>
+          </article>
+          <article class="programme-card" data-category="conditioning">
+            <img src="assets/images/07-boxing.webp" width="1122" height="1402" alt="A woman practising a controlled punch against a heavy bag" loading="lazy">
+            <div class="programme-top"><span>03 / BOXING FITNESS</span><span class="programme-pill">FOCUS</span></div>
+            <div class="programme-info"><h3>Boxing.</h3><p>Footwork, rhythm and a fresh kind of challenge.</p><button type="button" class="programme-open" data-programme="boxing" aria-label="Explore boxing fitness"><svg class="icon"><use href="#icon-arrow"/></svg></button></div>
+          </article>
+          <article class="programme-card programme-wide" data-category="cardio">
+            <img src="assets/images/08-cardio.webp" width="1672" height="940" alt="A woman jogging on a treadmill in the studio cardio area" loading="lazy">
+            <div class="programme-top"><span>04 / CARDIO</span><span class="programme-pill">GO</span></div>
+            <div class="programme-info"><h3>Cardio.</h3><p>Walk, jog or cycle. Work at your own pace.</p><button type="button" class="programme-open" data-programme="cardio" aria-label="Explore cardio training"><svg class="icon"><use href="#icon-arrow"/></svg></button></div>
+          </article>
+          <article class="programme-card programme-wide" data-category="cardio">
+            <img src="assets/images/10-group-class.webp" width="1672" height="941" alt="Four women enjoying a lively group dance fitness class" loading="lazy">
+            <div class="programme-top"><span>05 / GROUP ENERGY</span><span class="programme-pill">CONNECT</span></div>
+            <div class="programme-info"><h3>Group fitness.</h3><p>Good music. Shared effort. Your kind of company.</p><button type="button" class="programme-open" data-programme="group" aria-label="Explore group fitness"><svg class="icon"><use href="#icon-arrow"/></svg></button></div>
+          </article>
+        </div>
+        <div class="training-footer"><span>NOT SURE WHERE TO START?</span><a class="text-link" href="#contact">Let’s find your fit <svg class="icon"><use href="#icon-arrow"/></svg></a></div>
+      </div>
+    </section>
+
+    <section class="journey section-pad" id="journey" aria-labelledby="journey-title">
+      <div class="container">
+        <div class="journey-heading will-reveal"><p class="eyebrow"><span class="section-number">03</span> YOUR FIRST DAY, MADE SIMPLE</p><h2 id="journey-title">Your first day.<br><span class="text-outline">Four clear steps.</span></h2><p>Knowing what to expect makes starting feel easier.</p></div>
+        <div class="journey-grid">
+          <div class="journey-controls" role="tablist" aria-label="Your first day steps">
+            <button id="step-tab-0" class="journey-step active" type="button" role="tab" aria-selected="true" aria-controls="journey-panel" data-step="0"><span class="step-number">01</span><span><strong>LET’S TALK ABOUT YOU</strong><small>Your goals, your routine, your starting point.</small></span><span class="step-arrow">↗</span></button>
+            <button id="step-tab-1" class="journey-step" type="button" role="tab" aria-selected="false" aria-controls="journey-panel" tabindex="-1" data-step="1"><span class="step-number">02</span><span><strong>EASE INTO MOVEMENT</strong><small>A warm-up that gets you ready to train.</small></span><span class="step-arrow">↗</span></button>
+            <button id="step-tab-2" class="journey-step" type="button" role="tab" aria-selected="false" aria-controls="journey-panel" tabindex="-1" data-step="2"><span class="step-number">03</span><span><strong>GET THE BASICS RIGHT</strong><small>Coaching, clear cues and room to practise.</small></span><span class="step-arrow">↗</span></button>
+            <button id="step-tab-3" class="journey-step" type="button" role="tab" aria-selected="false" aria-controls="journey-panel" tabindex="-1" data-step="3"><span class="step-number">04</span><span><strong>FIND YOUR NEXT STEP</strong><small>Build a routine you can come back to.</small></span><span class="step-arrow">↗</span></button>
+          </div>
+          <div class="journey-panel" id="journey-panel" role="tabpanel" aria-labelledby="step-tab-0" tabindex="0">
+            <img id="journey-image" src="assets/images/01-consultation.webp" width="1536" height="1024" alt="A trainee discussing her starting point with a female coach" loading="lazy">
+            <div class="journey-runway" aria-hidden="true"><span></span><i></i><i></i><i></i><i></i></div>
+            <div class="journey-panel-caption"><span id="journey-count">01 / 04</span><h3 id="journey-caption">Start with a conversation.</h3><p id="journey-description">Tell us what you want from training and where you feel comfortable starting. We’ll help you choose a first session.</p></div>
+          </div>
+        </div>
+        <div class="coach-guide" aria-label="Our coaching approach"><div class="coach-guide-intro"><span class="eyebrow">THE COACHING APPROACH</span><h3>Clear cues.<br>A little confidence.</h3></div><div><span>01 / UNDERSTAND</span><h4>Learn the movement.</h4><p>Clear demonstrations and room to practise before adding a bigger challenge.</p></div><div><span>02 / ADAPT</span><h4>Make the session yours.</h4><p>Discuss your comfort, experience and the pace that works for you today.</p></div><div><span>03 / CONTINUE</span><h4>Know your next step.</h4><p>Finish with a practical starting point for your next visit and your weekly routine.</p></div></div>
+        <noscript><p class="noscript-note">Your first day follows four steps: a conversation about your goals, a warm-up, technique coaching and a plan for your next session.</p></noscript>
+      </div>
+    </section>
+
+    <section class="studio section-pad" aria-labelledby="studio-title">
+      <div class="container">
+        <div class="section-heading will-reveal"><div><p class="eyebrow"><span class="section-number">04</span> THE FLOOR IS YOURS</p><h2 id="studio-title">Good space.<br><span class="text-outline">Better movement.</span></h2></div><p>A training floor with space for focused sessions, everyday movement and a fresh challenge.</p></div>
+        <div class="studio-grid"><button class="studio-image studio-image-wide" type="button" data-lightbox="assets/images/studio-interior.webp" data-caption="The FORM studio concept: strength, cardio and an open training floor." aria-label="View the studio interior photograph"><img src="assets/images/studio-interior.webp" width="1672" height="941" alt="A gym interior with strength equipment, cycling bikes and open floor space" loading="lazy"><span>THE STUDIO <svg class="icon"><use href="#icon-arrow"/></svg></span></button><button class="studio-image studio-image-tall" type="button" data-lightbox="assets/images/05-step-up.webp" data-caption="A controlled step-up: a simple movement with a purposeful challenge." aria-label="View the step-up training photograph"><img src="assets/images/05-step-up.webp" width="1536" height="1024" alt="A woman stepping onto a low platform during lower-body training" loading="lazy"><span>ONE GOOD STEP <svg class="icon"><use href="#icon-arrow"/></svg></span></button></div>
+        <div class="studio-features"><div><span>01</span><h3>STRENGTH ZONE</h3><p>Weights and benches for learning the fundamentals.</p></div><div><span>02</span><h3>CARDIO CORNER</h3><p>Find a steady rhythm on the bike or treadmill.</p></div><div><span>03</span><h3>SPACE TO RESET</h3><p>An open floor for warming up and winding down.</p></div></div>
+      </div>
+    </section>
+
+    <section class="recovery dark-section" aria-labelledby="recovery-title"><div class="container recovery-grid"><div class="recovery-copy will-reveal"><p class="eyebrow"><span class="section-number">05</span> BALANCE BELONGS IN THE PLAN</p><h2 id="recovery-title">Make room<br>for <span class="text-yellow">the reset.</span></h2><p>Make time to warm up, move comfortably and finish with a calmer pace. Mobility is part of the routine, not an afterthought.</p><p>Speak to your coach about adjusting a session when you need to. Consistency starts with a routine that respects where you are today.</p><a class="text-link" href="#contact">Find a pace that suits you <svg class="icon"><use href="#icon-arrow"/></svg></a></div><div class="recovery-photo will-reveal"><img src="assets/images/11-mobility.webp" width="1536" height="1024" alt="A woman performing a comfortable half-kneeling mobility stretch" loading="lazy"><div class="reset-orbit" aria-hidden="true"><i></i><i></i><span>EFFORT<br>+ RESET</span></div><span class="recovery-stamp">Move.<br>Breathe.<br>Reset.</span></div></div></section>
+
+    <section class="schedule section-pad" id="schedule" aria-labelledby="schedule-title"><div class="container schedule-grid"><div class="schedule-intro will-reveal"><p class="eyebrow"><span class="section-number">06</span> MAKE ROOM IN YOUR WEEK</p><h2 id="schedule-title">A rhythm that<br><span class="text-outline">fits your week.</span></h2><p>Early before work or later after a busy day—choose a time you can make your own.</p><div class="opening-hours"><svg class="icon"><use href="#icon-clock"/></svg><div><strong>MON–SAT: 6:00 AM–10:00 PM</strong><span>SUNDAY: 8:00 AM–2:00 PM</span></div></div></div><div class="timetable"><div class="timetable-top"><span class="eyebrow">SAMPLE CLASS TIMETABLE</span><span class="mini-dot"></span></div><div class="schedule-tabs" role="tablist" aria-label="Timetable days"><button class="active" id="day-tab-0" type="button" role="tab" aria-controls="schedule-panel" aria-selected="true" data-day="0">MON / WED / FRI</button><button id="day-tab-1" type="button" role="tab" aria-controls="schedule-panel" aria-selected="false" tabindex="-1" data-day="1">TUE / THU / SAT</button><button id="day-tab-2" type="button" role="tab" aria-controls="schedule-panel" aria-selected="false" tabindex="-1" data-day="2">SUN</button></div><div id="schedule-panel" role="tabpanel" aria-labelledby="day-tab-0" tabindex="0"><div class="class-row"><time>6:30 AM</time><div><h3>Strength foundations</h3><p>Technique-led studio training</p></div><span>45 MIN</span></div><div class="class-row"><time>8:00 AM</time><div><h3>Group rhythm</h3><p>Dance-based cardio</p></div><span>45 MIN</span></div><div class="class-row"><time>6:30 PM</time><div><h3>Functional flow</h3><p>Movement and conditioning</p></div><span>45 MIN</span></div></div><p class="timetable-note">Illustrative schedule. Final class times and availability will be confirmed by the studio.</p></div></div></section>
+
+    <section class="membership section-pad" id="membership" aria-labelledby="membership-title"><div class="container"><div class="section-heading will-reveal"><div><p class="eyebrow"><span class="section-number">07</span> DEMO MEMBERSHIP PRICING</p><h2 id="membership-title">Good habits.<br><span class="text-outline">Room to grow.</span></h2></div><p>Choose a starting point. Ask about coaching and the training options that suit you.</p></div><div class="pricing-grid"><article class="price-card" data-plan-card="Monthly"><div class="price-top"><span>01 / FLEXIBLE START</span><svg class="icon"><use href="#icon-arrow"/></svg></div><h3>Monthly.</h3><p class="price">₹1,499<span>/ month</span></p><p class="price-description">A shorter commitment while you find your routine.</p><ul><li>Studio training access</li><li>Strength and cardio areas</li><li>A starting-point discussion</li></ul><button type="button" class="button button-black select-plan" data-plan="Monthly"><span class="plan-button-label">Choose monthly</span> <svg class="icon"><use href="#icon-arrow"/></svg></button></article><article class="price-card featured" data-plan-card="Quarterly"><span class="price-ribbon">BUILD YOUR ROUTINE</span><div class="price-top"><span>02 / KEEP THE MOMENTUM</span><svg class="icon"><use href="#icon-arrow"/></svg></div><h3>Quarterly.</h3><p class="price">₹3,999<span>/ 3 months</span></p><p class="price-description">Give a new habit a little more room to grow.</p><ul><li>Studio training access</li><li>Strength and cardio areas</li><li>A starting-point discussion</li></ul><button type="button" class="button button-black select-plan" data-plan="Quarterly"><span class="plan-button-label">Choose quarterly</span> <svg class="icon"><use href="#icon-arrow"/></svg></button></article><article class="price-card" data-plan-card="Annual"><div class="price-top"><span>03 / MAKE IT YOUR THING</span><svg class="icon"><use href="#icon-arrow"/></svg></div><h3>Annual.</h3><p class="price">₹12,999<span>/ year</span></p><p class="price-description">A longer-term home for your training routine.</p><ul><li>Studio training access</li><li>Strength and cardio areas</li><li>A starting-point discussion</li></ul><button type="button" class="button button-black select-plan" data-plan="Annual"><span class="plan-button-label">Choose annual</span> <svg class="icon"><use href="#icon-arrow"/></svg></button></article></div><details class="package-comparison"><summary><span>Compare the three memberships</span><span class="comparison-plus" aria-hidden="true">+</span></summary><div class="comparison-scroll" role="region" aria-label="Membership comparison" tabindex="0"><table><caption class="sr-only">Sample fees, duration and monthly equivalent for FORM memberships</caption><thead><tr><th scope="col">Package</th><th scope="col">Duration</th><th scope="col">Total fee</th><th scope="col">Monthly equivalent</th><th scope="col">Your choice</th></tr></thead><tbody><tr data-compare-plan="Monthly"><th scope="row">Monthly</th><td>1 month</td><td>₹1,499</td><td>₹1,499</td><td><button type="button" class="compare-plan-select select-plan" data-plan="Monthly"><span class="plan-button-label">Choose</span><span aria-hidden="true">↗</span></button></td></tr><tr data-compare-plan="Quarterly"><th scope="row">Quarterly</th><td>3 months</td><td>₹3,999</td><td>₹1,333</td><td><button type="button" class="compare-plan-select select-plan" data-plan="Quarterly"><span class="plan-button-label">Choose</span><span aria-hidden="true">↗</span></button></td></tr><tr data-compare-plan="Annual"><th scope="row">Annual</th><td>1 year</td><td>₹12,999</td><td>₹1,083.25</td><td><button type="button" class="compare-plan-select select-plan" data-plan="Annual"><span class="plan-button-label">Choose</span><span aria-hidden="true">↗</span></button></td></tr></tbody></table></div><p>Monthly equivalent = total fee divided by the number of months. Quarterly and annual fees cover the full period. All fees here are sample pricing.</p></details><div class="membership-note"><p>Sample pricing for this studio concept. Group class availability, enrolment terms and live fees must be confirmed.</p><div><strong>WANT ONE-TO-ONE COACHING?</strong><span>Personal training from ₹4,999/month <a href="#contact" class="inline-link">Ask for details ↗</a></span></div></div></div></section>
+
+    <section class="faq section-pad" id="faq" aria-labelledby="faq-title"><div class="container faq-grid"><div class="faq-heading will-reveal"><p class="eyebrow"><span class="section-number">08</span> BEFORE YOU STEP IN</p><h2 id="faq-title">Before your<br><span class="text-outline">first good move.</span></h2><p>A few things that can make your first visit feel easier.</p></div><div class="faq-list"><details open><summary>Is FORM a ladies-only gym?<span class="faq-plus" aria-hidden="true"></span></summary><p>Yes. This studio concept is designed as a dedicated training space for women, with female-led coaching and a range of ways to move.</p></details><details><summary>Can I start if I’m completely new to the gym?<span class="faq-plus" aria-hidden="true"></span></summary><p>Absolutely. Begin with a conversation about your experience and comfort level, then learn the basic movements with coaching. You don’t need an existing routine to get started.</p></details><details><summary>Do I have to lift weights?<span class="faq-plus" aria-hidden="true"></span></summary><p>No. Explore cardio, functional movement, boxing fitness, group sessions or mobility. Your coach can help you find a starting point that matches your interests.</p></details><details><summary>Is personal training part of the membership?<span class="faq-plus" aria-hidden="true"></span></summary><p>Personal training is a separate option in this demo, starting from ₹4,999 per month. Ask about the coaching format, session frequency and final pricing before choosing a plan.</p></details><details><summary>What should I bring to my first session?<span class="faq-plus" aria-hidden="true"></span></summary><p>Comfortable workout clothes, suitable training shoes, a towel and a water bottle. Share any concerns about movement or comfort with your coach before you start.</p></details><details><summary>When is the studio open?<span class="faq-plus" aria-hidden="true"></span></summary><p>The demo opening hours are Monday to Saturday, 6:00 AM to 10:00 PM, and Sunday, 8:00 AM to 2:00 PM. The timetable above is illustrative and should be confirmed for the live studio.</p></details><details><summary>How do I arrange my first visit?<span class="faq-plus" aria-hidden="true"></span></summary><p>Use the enquiry form below to prepare your details and preferred plan. This preview does not send messages or confirm appointments; contact details will be added for the live studio.</p></details></div></div></section>
+
+    <section class="closing" aria-labelledby="closing-title"><img src="assets/images/12-session-finish.webp" width="1916" height="821" alt="A trainee and female coach sharing a fist bump after a workout" loading="lazy"><div class="closing-shade" aria-hidden="true"></div><div class="container closing-content"><p class="eyebrow">THE NEXT STEP IS YOURS.</p><h2 id="closing-title">Show up.<br><span class="text-yellow">For yourself.</span></h2><p>You don’t have to know the whole plan.<br>Start with a conversation.</p><a class="button button-yellow" href="#contact">Let’s get you started <svg class="icon"><use href="#icon-arrow"/></svg></a></div></section>
+
+    <section class="contact section-pad" id="contact" aria-labelledby="contact-title"><div class="container contact-grid"><div class="contact-copy will-reveal"><p class="eyebrow"><span class="section-number">09</span> HELLO, BEHALA</p><h2 id="contact-title">Let’s find<br><span class="text-outline">your starting point.</span></h2><p>Tell us a little about yourself, the training you’re curious about and when you’d like to begin.</p><div class="contact-detail"><svg class="icon"><use href="#icon-pin"/></svg><div><strong>FORM LADIES FITNESS STUDIO</strong><span>24 Training Lane, Behala<br>Kolkata 700034</span><small>Illustrative address · Behala studio concept</small></div></div><div class="contact-detail"><svg class="icon"><use href="#icon-clock"/></svg><div><strong>COME AT YOUR PACE</strong><span>Monday–Saturday: 6 AM–10 PM<br>Sunday: 8 AM–2 PM</span></div></div><div class="demo-number"><span>CONTACT NUMBER · DEMO</span><strong>+91 00000 00000</strong><small>Live phone and WhatsApp details to be added.</small></div><a href="https://www.google.com/maps/search/Behala+Kolkata" target="_blank" rel="noopener noreferrer" class="text-link dark-link">Explore Behala on the map <svg class="icon"><use href="#icon-arrow"/></svg></a></div>
+      <form class="enquiry-form" id="enquiry-form">
+        <div class="form-title"><h3>Your next good move.</h3><span>DEMO ENQUIRY</span></div>
+        <p id="form-demo-note" class="form-note">Choose a package or let us help you decide. Prepare your details here; this preview does not send messages or book a visit.</p>
+
+        <fieldset class="form-section membership-fieldset">
+          <legend><span class="form-step">01</span> Your membership</legend>
+          <div class="plan-summary" id="selected-plan-summary" role="status" aria-live="polite" aria-atomic="true">
+            <div class="plan-summary-copy"><span id="selected-plan-label">YOUR STARTING POINT</span><h4 id="selected-plan-name">Help me choose</h4><p id="selected-plan-description">Explore a package below, or tell us what you’re looking for.</p></div>
+            <div class="plan-summary-price" id="selected-plan-price-block" hidden><strong id="selected-plan-price"></strong><span id="selected-plan-period"></span></div>
+          </div>
+          <div class="package-picker" id="form-package-picker" role="group" aria-label="Choose a membership package" hidden>
+            <button type="button" class="package-option" data-form-plan="Monthly" aria-pressed="false"><span>Monthly</span><strong>₹1,499</strong><small>1 month</small></button>
+            <button type="button" class="package-option" data-form-plan="Quarterly" aria-pressed="false"><span>Quarterly</span><strong>₹3,999</strong><small>3 months</small></button>
+            <button type="button" class="package-option" data-form-plan="Annual" aria-pressed="false"><span>Annual</span><strong>₹12,999</strong><small>1 year</small></button>
+            <button type="button" class="package-option package-help" data-form-plan="Not sure yet" aria-pressed="true">Not sure yet? Help me choose <span aria-hidden="true">↗</span></button>
+          </div>
+          <label class="plan-fallback" id="plan-fallback-label">Membership package
+            <select id="enquiry-plan" name="plan"><option value="Not sure yet">Help me choose</option><option value="Monthly">Monthly · ₹1,499</option><option value="Quarterly">Quarterly · ₹3,999</option><option value="Annual">Annual · ₹12,999</option></select>
+          </label>
+          <p class="package-footnote">Sample membership fees. Personal training is quoted separately.</p>
+        </fieldset>
+
+        <fieldset class="form-section">
+          <legend><span class="form-step">02</span> A little about you</legend>
+          <div class="form-grid">
+            <label>Full name <span class="required-mark" aria-hidden="true">*</span><input type="text" name="name" autocomplete="name" placeholder="Your full name" maxlength="100" required></label>
+            <label>Mobile number <span class="required-mark" aria-hidden="true">*</span><input type="tel" name="phone" autocomplete="tel" inputmode="tel" placeholder="Your mobile number" maxlength="20" required></label>
+            <label class="form-full">Email <span class="optional">Optional</span><input type="email" name="email" autocomplete="email" placeholder="you@example.com" maxlength="150"></label>
+          </div>
+        </fieldset>
+
+        <div class="training-preference-summary" id="training-preference-summary" hidden><div><span>YOUR TRAINING PREFERENCES</span><strong id="training-preference-goal"></strong><p id="training-preference-details"></p></div><a href="#finder">Change answers ↗</a></div>
+        <input type="hidden" id="enquiry-goal" name="goal" value="">
+        <input type="hidden" id="enquiry-experience" name="experience" value="">
+
+        <fieldset class="form-section training-fieldset">
+          <legend><span class="form-step">03</span> Make it your routine</legend>
+          <div class="form-grid">
+            <label>Interested in<select name="interest"><option value="Not sure yet">Help me choose</option><option>Strength training</option><option>Functional fitness</option><option>Boxing fitness</option><option>Cardio training</option><option>Group fitness</option><option>Personal training</option><option>Mobility and recovery</option></select></label>
+            <label>Preferred training time<select name="preferredTime"><option value="Flexible">I’m flexible</option><option value="Morning">Morning</option><option value="Afternoon">Afternoon</option><option value="Evening">Evening</option></select></label>
+            <label class="form-full">Anything we should know? <span class="optional">Optional</span><textarea name="message" rows="3" maxlength="1000" placeholder="Your goals, questions or what would make starting easier"></textarea></label>
+          </div>
+        </fieldset>
+
+        <label class="consent"><input type="checkbox" name="consent" required><span>I’m happy to prepare these details for my membership enquiry.</span></label>
+        <button class="button button-yellow form-submit" type="submit"><span id="submit-label">Preview my enquiry</span><svg class="icon"><use href="#icon-arrow"/></svg></button>
+        <p class="form-delivery-note" id="form-delivery-note">Preview only · No payment or message is sent.</p>
+        <div class="form-result" id="form-result" role="status" aria-live="polite" hidden><p id="form-result-message"></p><button type="button" class="text-link dark-link" id="download-enquiry" hidden>Download my enquiry <span>↓</span></button></div>
+      </form></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container"><div class="footer-top"><a class="brand" href="#home" aria-label="FORM home"><span class="brand-word">FORM<span class="brand-dot">.</span></span><span class="brand-tag">LADIES FITNESS STUDIO</span></a><p>A space for women.<br>A rhythm that’s yours.</p><a class="back-top" href="#home">BACK TO TOP <svg class="icon"><use href="#icon-arrow"/></svg></a></div><div class="footer-nav"><a href="#about">The studio</a><a href="#training">Training</a><a href="#journey">Your first day</a><a href="#membership">Membership</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div><div class="footer-word" aria-hidden="true">FORM<span>.</span></div><div class="footer-bottom"><p>© <span id="copyright-year">2026</span> FORM · Behala, Kolkata</p><p>Demo business, sample fees and address. Images are illustrative.</p><p>Created by Sourav Show</p><button type="button" class="motion-toggle" aria-pressed="true"><span class="motion-icon" aria-hidden="true"><i></i><i></i><i></i></span><span class="motion-label">Motion on</span></button></div></div></footer>
+
+  <div class="mobile-bar"><a href="#membership">View membership</a><a href="#contact">Start your journey <svg class="icon"><use href="#icon-arrow"/></svg></a></div>
+  <dialog class="programme-dialog" id="programme-dialog" aria-labelledby="programme-dialog-title"><button type="button" class="dialog-close" aria-label="Close programme details">×</button><img id="programme-dialog-image" src="assets/images/04-strength.webp" alt="" width="1122" height="1402"><div class="dialog-copy"><p class="eyebrow" id="programme-dialog-label">STRENGTH TRAINING</p><h2 id="programme-dialog-title">Strong foundations.</h2><p id="programme-dialog-description"></p><ul id="programme-dialog-list"></ul><a class="button button-yellow" href="#contact" id="programme-dialog-enquire">Ask about this training <svg class="icon"><use href="#icon-arrow"/></svg></a></div></dialog>
+  <dialog class="lightbox-dialog" id="lightbox-dialog" aria-label="Studio photograph"><button type="button" class="dialog-close" aria-label="Close photograph">×</button><img id="lightbox-image" src="assets/images/studio-interior.webp" alt=""><p id="lightbox-caption"></p></dialog>
+</body>
+</html>

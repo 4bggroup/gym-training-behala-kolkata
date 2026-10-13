@@ -1,0 +1,66 @@
+/* FORM / studio motion language.
+   Floor lines, training-lane focus, route changes, viewfinder and plan traces.
+   No autoplay carousel, looping promotional ticker or page-blocking loader. */
+@keyframes form-type-gate{
+ from{clip-path:inset(100% 0 0 0);transform:translateY(28px)}
+ to{clip-path:inset(0);transform:translateY(0)}
+}
+@keyframes form-signature{
+ from{stroke-dashoffset:650}
+ to{stroke-dashoffset:0}
+}
+@keyframes form-photo-gate{
+ from{clip-path:polygon(0 0,0 0,0 100%,0 100%)}
+ to{clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}
+}
+@keyframes form-frame-trace{
+ from{clip-path:polygon(0 0,0 0,0 0,0 0)}
+ 50%{clip-path:polygon(0 0,100% 0,100% 7%,0 7%)}
+ to{clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}
+}
+@keyframes form-route-line{
+ from{transform:translateX(-110%)}
+ to{transform:translateX(110%)}
+}
+@keyframes form-route-count{
+ from{transform:translateY(13px);clip-path:inset(0 0 100% 0)}
+ to{transform:translateY(0);clip-path:inset(0)}
+}
+@keyframes form-plan-mark{
+ 0%{box-shadow:0 0 0 0 #11111120}
+ 60%{box-shadow:0 0 0 8px #11111100}
+ 100%{box-shadow:0 0 0 4px #11111112}
+}
+@keyframes form-window-open{
+ from{clip-path:polygon(0 0,100% 0,100% 0,0 0)}
+ to{clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}
+}
+.hero-line{animation:form-type-gate .9s var(--ease) both .08s}
+.hero-line-accent{animation-delay:.19s;animation-duration:1.05s}
+.hero-signature path{stroke-dasharray:650;animation:form-signature 1.3s var(--ease) both .45s}
+.hero-signature path:nth-child(2){animation-delay:.7s;animation-duration:1s}
+.motion-ready .about-photo.is-in-view>img{animation:form-photo-gate .9s var(--ease) both}
+.motion-ready .about-photo.is-in-view::before{animation:form-frame-trace 1.2s var(--ease) both}
+.motion-ready .recovery-photo.is-in-view>img{animation:form-photo-gate 1s var(--ease) both}
+.motion-ready .recovery-photo.is-in-view::before{animation:form-frame-trace 1.2s var(--ease) both}
+.programme-card.is-spotlight::before{animation:form-frame-trace .7s var(--ease) both}
+.journey-panel::after{content:'';position:absolute;z-index:4;left:0;top:0;width:100%;height:4px;background:var(--yellow);transform:translateX(-110%);pointer-events:none}
+.journey-panel.is-changing::after{animation:form-route-line .65s var(--ease) both}
+.journey-panel.is-changing #journey-count{animation:form-route-count .5s var(--ease) both}
+.price-card.selected::before{animation:form-plan-mark .75s var(--ease) both}
+.programme-dialog[open]{animation:form-window-open .55s var(--ease) both}
+.motion-ready .hero-media{transition:transform .8s var(--ease)}
+.motion-ready .footer-word{transition:transform .2s linear}
+.motion-ready .reset-orbit{transition:transform .35s linear}
+body.tab-away *,body.tab-away *::before,body.tab-away *::after{animation-play-state:paused!important}
+body.motion-off .hero-signature path{stroke-dasharray:none;stroke-dashoffset:0}
+body.motion-off .about-photo>img,body.motion-off .recovery-photo>img{clip-path:none!important}
+body.motion-off .programme-card::before{clip-path:none!important}
+body.motion-off .journey-panel::after{display:none}
+body.motion-off .programme-dialog[open]{clip-path:none!important}
+@media(prefers-reduced-motion:reduce){
+ .hero-line{clip-path:none;transform:none}
+ .hero-signature path{stroke-dasharray:none;stroke-dashoffset:0}
+ .about-photo>img,.recovery-photo>img,.programme-card::before,.programme-dialog[open]{clip-path:none!important}
+ .journey-panel::after{display:none}
+}

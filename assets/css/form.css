@@ -1,0 +1,56 @@
+/* FORM — enquiry and package selection. Kept separate for easy editing. */
+.enquiry-form{padding:38px 36px 32px;background:linear-gradient(145deg,#fff 0%,#fff 70%,#fafbf5 100%);border-color:#d5d7ca;box-shadow:10px 12px 0 #e7e9de}
+.enquiry-form .form-title{align-items:flex-start;gap:15px}
+.enquiry-form .form-title h3{font-size:30px;line-height:1.2;max-width:360px}
+.enquiry-form .form-title>span{font-size:7px;padding:6px 8px;margin-top:5px;background:#f7f8f0;color:#737b64}
+.enquiry-form .form-note{font-size:12px;line-height:1.85;max-width:500px;margin-top:16px;color:#7b826e}
+.form-section{min-width:0;margin:29px 0 0;padding:25px 0 0;border:0;border-top:1px solid #dfe3d5}
+.form-section legend{padding:0 12px 0 0;display:flex;align-items:center;gap:10px;font:500 12px/1.5 var(--body);color:#343b2d}
+.form-step{display:grid;place-items:center;width:23px;height:23px;border-radius:50%;border:1px solid #d4d9c7;font-size:8px;font-weight:500;color:#76816a}
+.membership-fieldset{padding-top:20px}
+.plan-summary{padding:24px;display:flex;align-items:center;justify-content:space-between;gap:20px;position:relative;overflow:hidden;border-radius:14px 14px 4px 14px;background:#f0f2e8;border:1px solid #dfe4d2;transition:background .35s,border-color .35s;color:#323b25}
+.plan-summary.has-selection{background:#111310;border-color:#111310;color:#fff}
+.plan-summary.has-selection::after{content:'';position:absolute;top:0;bottom:0;left:0;width:3px;background:var(--yellow)}
+.plan-summary-copy{min-width:0}
+.plan-summary-copy>span{display:block;font:500 8px/1.5 var(--body);letter-spacing:.14em;color:#78816b;margin-bottom:10px}
+.has-selection .plan-summary-copy>span{color:var(--yellow)}
+.plan-summary h4{font:600 25px/1.2 var(--display);letter-spacing:-.055em;margin:0}
+.plan-summary p{font-size:10px;line-height:1.7;color:#7b856b;max-width:270px;margin-top:9px}
+.has-selection.plan-summary p{color:#b1b9a4}
+.plan-summary-price{flex-shrink:0;text-align:right}
+.plan-summary-price strong{display:block;font:600 30px/1.1 var(--display);letter-spacing:-.07em;color:var(--yellow);white-space:nowrap}
+.plan-summary-price>span{display:block;font:400 10px/1.6 var(--body);margin-top:7px;color:#b8c0ad}
+.package-picker{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:14px}
+.package-option{position:relative;min-width:0;display:grid;gap:5px;text-align:left;padding:13px 12px;background:#fff;border:1px solid #dbdfd0;border-radius:8px;transition:border-color .25s,background .25s,box-shadow .25s}
+.package-option>span{font:500 10px/1.4 var(--body);color:#68765a}
+.package-option strong{font:600 18px/1.2 var(--display);letter-spacing:-.06em;color:#28321e}
+.package-option small{font:400 9px/1.5 var(--body);color:#8b967c}
+.package-option:hover{border-color:#899777;background:#f8faf1}
+.package-option[aria-pressed=true]:not(.package-help){border-color:#111310;background:#fffbed;box-shadow:inset 0 -2px 0 var(--yellow)}
+.package-option[aria-pressed=true]:not(.package-help)::after{content:'';position:absolute;right:9px;top:10px;width:4px;height:4px;border-radius:50%;background:#111}
+.package-option.package-help{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:38px;padding:10px 3px 2px;border:0;border-radius:0;background:transparent;font:400 10px/1.6 var(--body);color:#7c866e}
+.package-help[aria-pressed=true]{color:#27341b;font-weight:500}
+.package-help>span{font-size:15px;color:inherit}
+.plan-fallback{display:block;margin-top:16px;font:500 11px/1.5 var(--body)}
+.package-footnote{font:400 9px/1.7 var(--body);color:#899378;margin-top:12px}
+.form-section .form-grid{margin-top:0;gap:20px 16px}
+.enquiry-form .form-grid>label{font-size:12px;line-height:1.5;letter-spacing:0;color:#3e4832;font-weight:500}
+.enquiry-form .optional{font-size:9px;color:#9ba28f;font-weight:400;margin-left:5px;letter-spacing:0}
+.required-mark{color:#aa8c00;font-size:10px;margin-left:2px}
+.enquiry-form input:not([type=checkbox]),.enquiry-form select,.enquiry-form textarea{min-height:51px;margin-top:9px;padding:14px 13px;background:#fafbf7;border-color:#d9dece;border-radius:7px;font-size:14px;color:#35432b}
+.enquiry-form input::placeholder,.enquiry-form textarea::placeholder{color:#9aa48b}
+.enquiry-form input:not([type=checkbox]):focus,.enquiry-form select:focus,.enquiry-form textarea:focus{border-color:#787f62;box-shadow:0 0 0 3px #e7ebde}
+.enquiry-form textarea{min-height:100px}
+.enquiry-form .consent{margin-top:25px;font-size:11px;line-height:1.8;color:#788268}
+.enquiry-form .consent input{margin-top:3px}
+.enquiry-form .form-submit{min-height:56px;margin-top:23px;font-size:13px;border-radius:8px}
+.form-delivery-note{margin:12px 0 0!important;text-align:center;font-size:9px;line-height:1.6;color:#939b84}
+.enquiry-form .form-result{padding:19px 20px;margin-top:22px;background:#f3f6ec;border:1px solid #dde6cf;border-radius:10px;font-size:12px;line-height:1.8;color:#435533}
+.enquiry-form .form-result.error{background:#fff6f2;border-color:#ebd5cd;color:#9b3020}
+.enquiry-form .form-result .text-link{font-size:11px;color:inherit;margin-top:13px;padding:0 0 5px}
+.price-card.selected .plan-button-label{font-weight:500}
+@media(max-width:1150px){.enquiry-form{padding:32px 28px 29px}.enquiry-form .form-title h3{font-size:28px}.plan-summary{padding:22px}.plan-summary h4{font-size:23px}.plan-summary-price strong{font-size:27px}.package-option{padding:12px 10px}.package-option strong{font-size:17px}}
+@media(max-width:900px) and (min-width:701px){.enquiry-form{padding:28px 23px}.enquiry-form .form-title h3{font-size:25px}.enquiry-form .form-title>span{display:none}.plan-summary{padding:19px;gap:12px}.plan-summary h4{font-size:21px}.plan-summary p{font-size:9px;max-width:190px}.plan-summary-price strong{font-size:24px}.plan-summary-price>span{font-size:9px}.package-picker{gap:6px}.package-option>span{font-size:9px}.package-option strong{font-size:15px}.package-option small{font-size:8px}.enquiry-form .form-grid>label{font-size:11px}.enquiry-form input:not([type=checkbox]),.enquiry-form select,.enquiry-form textarea{font-size:13px}}
+@media(max-width:700px){.enquiry-form{padding:29px 23px 27px;margin-right:7px;box-shadow:7px 8px 0 #e7e9de}.enquiry-form .form-title h3{font-size:28px}.enquiry-form .form-title>span{display:block;font-size:6px;padding:5px 7px}.enquiry-form .form-note{font-size:11px;margin-top:16px;line-height:1.85}.form-section{margin-top:27px;padding-top:21px}.form-section legend{font-size:11px;gap:9px}.form-step{height:22px;width:22px}.plan-summary{padding:21px 19px;gap:16px;border-radius:12px 12px 4px 12px}.plan-summary h4{font-size:23px}.plan-summary-copy>span{font-size:7px;letter-spacing:.11em}.plan-summary p{font-size:9px;line-height:1.7;max-width:185px}.plan-summary-price strong{font-size:26px}.plan-summary-price>span{font-size:9px}.package-picker{gap:7px;margin-top:12px}.package-option{padding:13px 10px;gap:6px}.package-option>span{font-size:9px}.package-option strong{font-size:17px}.package-option small{font-size:8px}.package-option.package-help{font-size:10px}.package-footnote{font-size:8px;line-height:1.8}.form-section .form-grid{gap:21px 14px}.enquiry-form .form-grid>label{font-size:12px}.enquiry-form .form-grid>label:first-child,.enquiry-form .form-grid>label:nth-child(2){grid-column:auto}.enquiry-form .form-section:not(.training-fieldset) .form-grid>label:first-child,.enquiry-form .form-section:not(.training-fieldset) .form-grid>label:nth-child(2){grid-column:1/-1}.enquiry-form input:not([type=checkbox]),.enquiry-form select,.enquiry-form textarea{font-size:16px;min-height:52px;padding:14px 12px}.enquiry-form .optional{font-size:9px;margin-left:4px}.enquiry-form .consent{font-size:10px;margin-top:23px}.enquiry-form .form-submit{font-size:12px;min-height:55px}.form-delivery-note{font-size:8px}.enquiry-form .form-result{padding:18px;font-size:11px}.enquiry-form .form-result .text-link{font-size:11px}}
+@media(max-width:360px){.enquiry-form{padding:26px 19px 24px}.enquiry-form .form-title h3{font-size:26px}.enquiry-form .form-title>span{display:none}.plan-summary{padding:18px 15px;gap:11px}.plan-summary h4{font-size:20px}.plan-summary-price strong{font-size:23px}.plan-summary p{font-size:8px;max-width:145px}.package-option{padding:12px 8px}.package-option>span{font-size:8px}.package-option strong{font-size:15px}.package-option small{font-size:7px}.package-option.package-help{font-size:9px}.training-fieldset .form-grid{grid-template-columns:1fr}.training-fieldset .form-grid>label{grid-column:1/-1}}
+@media print{.package-picker{display:none!important}.plan-summary.has-selection{background:#fff;color:#111}.plan-summary-price strong{color:#111}.enquiry-form{box-shadow:none}.package-footnote{color:#555}}
